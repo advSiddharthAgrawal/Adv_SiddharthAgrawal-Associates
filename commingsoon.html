@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Adv. Siddharth Agrawal & Associates — Trusted Legal Counsel. Strong Representation.">
+
+    <meta name="theme-color" content="#050505">
+
+    <title>Launching Soon | Adv. Siddharth Agrawal & Associates</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* =========================================
+           RESET
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at center,
+                    #17130c 0%,
+                    #090806 45%,
+                    #020202 100%);
+
+            color: #f7f2e8;
+            font-family: 'Montserrat', sans-serif;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =========================================
+           BACKGROUND DECORATION
+        ========================================= */
+
+        body::before {
+            content: "";
+            position: fixed;
+
+            width: 700px;
+            height: 700px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(205, 160, 72, 0.08);
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            pointer-events: none;
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+
+            width: 900px;
+            height: 900px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(205, 160, 72, 0.04);
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            pointer-events: none;
+        }
+
+
+        /* =========================================
+           MAIN CONTAINER
+        ========================================= */
+
+        .launch-page {
+            width: 100%;
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 40px 20px;
+
+            position: relative;
+            z-index: 2;
+        }
+
+
+        .content {
+            width: 100%;
+            max-width: 1000px;
+
+            text-align: center;
+
+            padding: 55px 40px;
+
+            border: 1px solid rgba(203, 160, 76, 0.28);
+
+            background:
+                linear-gradient(145deg,
+                    rgba(255, 255, 255, 0.025),
+                    rgba(0, 0, 0, 0.25));
+
+            box-shadow:
+                0 0 80px rgba(0, 0, 0, 0.7),
+                inset 0 0 40px rgba(203, 160, 76, 0.025);
+
+            backdrop-filter: blur(8px);
+        }
+
+
+        /* =========================================
+           LOGO
+        ========================================= */
+        /* 
+        .logo-wrapper {
+            width: 120px;
+            height: 120px;
+
+            margin: 0 auto 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+        }
+
+
+        .logo-wrapper::before {
+            content: "";
+
+            position: absolute;
+
+            width: 225px;
+            height: 225px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(212, 170, 85, 0.25);
+
+            animation: rotate 25s linear infinite;
+        }
+
+
+        .logo-wrapper::after {
+            content: "";
+
+            position: absolute;
+
+            width: 245px;
+            height: 245px;
+
+            border-radius: 50%;
+
+            border: 1px dashed rgba(212, 170, 85, 0.12);
+
+            animation: rotateReverse 35s linear infinite;
+        }
+ */
+
+        .logo {
+            width: 200px;
+            height: 200px;
+
+            object-fit: contain;
+
+            position: relative;
+            z-index: 2;
+
+            filter:
+                drop-shadow(0 0 20px rgba(218, 171, 77, 0.15));
+        }
+
+
+        /* =========================================
+           SMALL LABEL
+        ========================================= */
+
+        .eyebrow {
+            font-family: 'Cinzel', serif;
+
+            color: #d8ad58;
+
+            font-size: 13px;
+
+            letter-spacing: 5px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 22px;
+        }
+
+
+        /* =========================================
+           MAIN HEADING
+        ========================================= */
+
+        h1 {
+            font-family: 'Cinzel', serif;
+
+            font-weight: 500;
+
+            font-size: clamp(32px, 5vw, 65px);
+
+            line-height: 1.15;
+
+            letter-spacing: 2px;
+
+            color: #f5f1e8;
+
+            margin-bottom: 12px;
+        }
+
+
+        .firm-name {
+            font-family: 'Cinzel', serif;
+
+            color: #d9ad57;
+
+            font-size: clamp(18px, 2.5vw, 28px);
+
+            letter-spacing: 5px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================================
+           GOLD DIVIDER
+        ========================================= */
+
+        .divider {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            margin: 25px auto;
+
+            max-width: 550px;
+        }
+
+
+        .divider span {
+            height: 1px;
+
+            flex: 1;
+
+            background:
+                linear-gradient(90deg,
+                    transparent,
+                    #cba04c,
+                    transparent);
+        }
+
+
+        .diamond {
+            width: 9px;
+            height: 9px;
+
+            background: #cba04c;
+
+            transform: rotate(45deg);
+
+            box-shadow:
+                0 0 10px rgba(203, 160, 76, 0.5);
+        }
+
+
+        /* =========================================
+           MESSAGE
+        ========================================= */
+
+        .message {
+            max-width: 680px;
+
+            margin: 0 auto 35px;
+
+            color: #c8c3b9;
+
+            font-size: 15px;
+
+            font-weight: 300;
+
+            line-height: 1.9;
+
+            letter-spacing: 0.5px;
+        }
+
+
+        .tagline {
+            font-family: 'Cinzel', serif;
+
+            font-size: 14px;
+
+            letter-spacing: 4px;
+
+            color: #d3aa59;
+
+            text-transform: uppercase;
+
+            margin-bottom: 40px;
+        }
+
+
+        /* =========================================
+           LAUNCH BADGE
+        ========================================= */
+
+        .launch-badge {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 13px 27px;
+
+            border: 1px solid rgba(211, 170, 89, 0.55);
+
+            color: #e4c27c;
+
+            font-size: 11px;
+
+            font-weight: 600;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            background: rgba(204, 159, 72, 0.035);
+        }
+
+
+        .launch-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: #d5aa58;
+
+            box-shadow:
+                0 0 0 5px rgba(213, 170, 88, 0.08),
+                0 0 15px rgba(213, 170, 88, 0.7);
+
+            animation: pulse 2s infinite;
+        }
+
+
+        /* =========================================
+           CONTACT
+        ========================================= */
+
+        .contact {
+            margin-top: 42px;
+
+            padding-top: 25px;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 15px 40px;
+        }
+
+
+        .contact a {
+            color: #aaa49a;
+
+            text-decoration: none;
+
+            font-size: 12px;
+
+            letter-spacing: 0.5px;
+
+            transition: 0.3s ease;
+        }
+
+
+        .contact a:hover {
+            color: #d9ad57;
+        }
+
+
+        /* =========================================
+           DISCLAIMER
+        ========================================= */
+
+        .disclaimer {
+            max-width: 750px;
+
+            margin: 30px auto 0;
+
+            color: #68645e;
+
+            font-size: 9px;
+
+            line-height: 1.7;
+
+            letter-spacing: 0.3px;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            margin-top: 25px;
+
+            color: #55514c;
+
+            font-size: 9px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =========================================
+           ANIMATIONS
+        ========================================= */
+
+        @keyframes pulse {
+
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.45;
+                transform: scale(0.75);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+
+        @keyframes rotate {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        @keyframes rotateReverse {
+
+            from {
+                transform: rotate(360deg);
+            }
+
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 768px) {
+
+            .launch-page {
+                padding: 25px 15px;
+            }
+
+            .content {
+                padding: 40px 20px;
+            }
+
+            .logo-wrapper {
+                width: 175px;
+                height: 175px;
+
+                margin-bottom: 25px;
+            }
+
+            .logo {
+                width: 160px;
+                height: 160px;
+            }
+
+            .logo-wrapper::before {
+                width: 175px;
+                height: 175px;
+            }
+
+            .logo-wrapper::after {
+                width: 195px;
+                height: 195px;
+            }
+
+            .eyebrow {
+                font-size: 10px;
+                letter-spacing: 3px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .firm-name {
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
+
+            .message {
+                font-size: 13px;
+                line-height: 1.8;
+            }
+
+            .tagline {
+                font-size: 11px;
+                letter-spacing: 2px;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            body::before {
+                width: 400px;
+                height: 400px;
+            }
+
+            body::after {
+                width: 550px;
+                height: 550px;
+            }
+        }
+
+
+        /* =========================================
+           VERY SMALL DEVICES
+        ========================================= */
+
+        @media (max-width: 400px) {
+
+            .content {
+                padding: 30px 15px;
+            }
+
+            .logo-wrapper {
+                width: 145px;
+                height: 145px;
+            }
+
+            .logo {
+                width: 135px;
+                height: 135px;
+            }
+
+            .logo-wrapper::before {
+                width: 145px;
+                height: 145px;
+            }
+
+            .logo-wrapper::after {
+                width: 160px;
+                height: 160px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            .firm-name {
+                font-size: 13px;
+            }
+
+            .launch-badge {
+                padding: 11px 17px;
+                font-size: 9px;
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <main class="launch-page">
+
+        <section class="content">
+
+            <!-- LOGO -->
+            <div class="logo-wrapper">
+                <img src="./images/Logo/logo.jpeg" alt="Adv. Siddharth Agrawal & Associates Logo" class="logo">
+            </div>
+
+
+            <!-- LABEL -->
+            <div class="eyebrow">
+                Trusted Legal Counsel
+            </div>
+
+
+            <!-- HEADING -->
+            <h1>
+                Coming Soon
+            </h1>
+
+
+            <div class="firm-name">
+                Adv. Siddharth Agrawal & Associates
+            </div>
+
+
+            <!-- DIVIDER -->
+            <div class="divider">
+                <span></span>
+                <div class="diamond"></div>
+                <span></span>
+            </div>
+
+
+            <!-- MESSAGE -->
+            <p class="message">
+                Our new digital presence is currently being prepared.
+                We are building a professional platform designed to provide
+                information about our legal practice, expertise and services.
+            </p>
+
+
+            <div class="tagline">
+                Law · Equity · Fairness · Fierce
+            </div>
+
+
+            <!-- LAUNCH STATUS -->
+            <div class="launch-badge">
+                <span class="launch-dot"></span>
+                Website Launching Soon
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="contact">
+
+                <a href="tel:+917378858895">
+                    +91 73788 58895
+                </a>
+
+                <a href="mailto:advsiddharthagrawal@gmail.com">
+                    advsiddharthagrawal@gmail.com
+                </a>
+
+            </div>
+
+
+            <!-- DISCLAIMER -->
+            <p class="disclaimer">
+                Disclaimer: The contents of this website are intended for
+                general informational purposes only and should not be construed
+                as legal advice. Visiting or communicating through this website
+                does not establish an advocate-client relationship.
+            </p>
+
+
+            <footer>
+                © 2026 Adv. Siddharth Agrawal & Associates · All Rights Reserved
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
