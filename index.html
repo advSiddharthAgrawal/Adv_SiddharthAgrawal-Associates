@@ -38,13 +38,9 @@
 
         body {
             min-height: 100vh;
-            background:
-                radial-gradient(circle at center,
-                    #17130c 0%,
-                    #090806 45%,
-                    #020202 100%);
+            background: linear-gradient(180deg, #f6f7f9 0%, #ffffff 100%);
 
-            color: #f7f2e8;
+            color: #111318;
             font-family: 'Montserrat', sans-serif;
 
             display: flex;
@@ -68,7 +64,7 @@
 
             border-radius: 50%;
 
-            border: 1px solid rgba(205, 160, 72, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.04);
 
             top: 50%;
             left: 50%;
@@ -87,7 +83,7 @@
 
             border-radius: 50%;
 
-            border: 1px solid rgba(205, 160, 72, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.02);
 
             top: 50%;
             left: 50%;
@@ -119,24 +115,26 @@
 
         .content {
             width: 100%;
-            max-width: 1000px;
+            max-width: none;
 
             text-align: center;
 
-            padding: 55px 40px;
+            padding: 60px 6vw;
 
-            border: 1px solid rgba(203, 160, 76, 0.28);
+            border: none;
 
-            background:
-                linear-gradient(145deg,
-                    rgba(255, 255, 255, 0.025),
-                    rgba(0, 0, 0, 0.25));
+            background: linear-gradient(180deg, #ffffff, #fbfcfd);
 
-            box-shadow:
-                0 0 80px rgba(0, 0, 0, 0.7),
-                inset 0 0 40px rgba(203, 160, 76, 0.025);
+            box-shadow: none;
 
-            backdrop-filter: blur(8px);
+            border-radius: 0;
+        }
+
+        /* Slightly larger padding on very wide screens */
+        @media (min-width: 1200px) {
+            .content {
+                padding: 80px 9vw;
+            }
         }
 
 
@@ -191,16 +189,16 @@
  */
 
         .logo {
-            width: 200px;
-            height: 200px;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
 
             object-fit: contain;
 
             position: relative;
             z-index: 2;
 
-            filter:
-                drop-shadow(0 0 20px rgba(218, 171, 77, 0.15));
+            filter: drop-shadow(0 6px 18px rgba(16, 20, 24, 0.08));
         }
 
 
@@ -211,7 +209,7 @@
         .eyebrow {
             font-family: 'Cinzel', serif;
 
-            color: #d8ad58;
+            color: #a36f12;
 
             font-size: 13px;
 
@@ -238,7 +236,7 @@
 
             letter-spacing: 2px;
 
-            color: #f5f1e8;
+            color: #0b1220;
 
             margin-bottom: 12px;
         }
@@ -247,7 +245,7 @@
         .firm-name {
             font-family: 'Cinzel', serif;
 
-            color: #d9ad57;
+            color: #5a4326;
 
             font-size: clamp(18px, 2.5vw, 28px);
 
@@ -313,7 +311,7 @@
 
             margin: 0 auto 35px;
 
-            color: #c8c3b9;
+            color: #33363a;
 
             font-size: 15px;
 
@@ -332,7 +330,7 @@
 
             letter-spacing: 4px;
 
-            color: #d3aa59;
+            color: #8c5f12;
 
             text-transform: uppercase;
 
@@ -353,9 +351,9 @@
 
             padding: 13px 27px;
 
-            border: 1px solid rgba(211, 170, 89, 0.55);
+            border: 1px solid rgba(163, 111, 18, 0.14);
 
-            color: #e4c27c;
+            color: #8c5f12;
 
             font-size: 11px;
 
@@ -365,7 +363,7 @@
 
             text-transform: uppercase;
 
-            background: rgba(204, 159, 72, 0.035);
+            background: rgba(220, 190, 120, 0.06);
         }
 
 
@@ -375,11 +373,9 @@
 
             border-radius: 50%;
 
-            background: #d5aa58;
+            background: #b8860b;
 
-            box-shadow:
-                0 0 0 5px rgba(213, 170, 88, 0.08),
-                0 0 15px rgba(213, 170, 88, 0.7);
+            box-shadow: 0 0 0 4px rgba(184, 134, 11, 0.06);
 
             animation: pulse 2s infinite;
         }
@@ -407,7 +403,7 @@
 
 
         .contact a {
-            color: #aaa49a;
+            color: #1b3558;
 
             text-decoration: none;
 
@@ -415,12 +411,12 @@
 
             letter-spacing: 0.5px;
 
-            transition: 0.3s ease;
+            transition: 0.18s ease;
         }
 
 
         .contact a:hover {
-            color: #d9ad57;
+            color: #8c5f12;
         }
 
 
@@ -433,9 +429,9 @@
 
             margin: 30px auto 0;
 
-            color: #68645e;
+            color: #6b6f73;
 
-            font-size: 9px;
+            font-size: 11px;
 
             line-height: 1.7;
 
@@ -450,13 +446,13 @@
         footer {
             margin-top: 25px;
 
-            color: #55514c;
+            color: #666b70;
 
-            font-size: 9px;
+            font-size: 11px;
 
-            letter-spacing: 1px;
+            letter-spacing: 0.6px;
 
-            text-transform: uppercase;
+            text-transform: none;
         }
 
 
@@ -529,8 +525,9 @@
             }
 
             .logo {
-                width: 160px;
-                height: 160px;
+                width: 100%;
+                max-width: 160px;
+                height: auto;
             }
 
             .logo-wrapper::before {
@@ -600,8 +597,9 @@
             }
 
             .logo {
-                width: 135px;
-                height: 135px;
+                width: 100%;
+                max-width: 135px;
+                height: auto;
             }
 
             .logo-wrapper::before {
@@ -638,10 +636,7 @@
 
         <section class="content">
 
-            <!-- LOGO -->
-            <div class="logo-wrapper">
-                <img src="./image/logo.jpeg" alt="Adv. Siddharth Agrawal & Associates Logo" class="logo">
-            </div>
+            <!-- logo removed -->
 
 
             <!-- LABEL -->
@@ -652,7 +647,7 @@
 
             <!-- HEADING -->
             <h1>
-                Coming Soon
+                Launching Soon
             </h1>
 
 
@@ -713,7 +708,8 @@
 
 
             <footer>
-                © 2026 Adv. Siddharth Agrawal & Associates · All Rights Reserved
+                © 2026 Adv. Siddharth Agrawal & Associates · All Rights Reserved<br>
+                Designed & Developed by SG Web Technologies
             </footer>
 
         </section>
